@@ -42,6 +42,13 @@ section {
   flex: 1;
 }
 
+@media (max-width: 440px) {
+  .date-wrapper {
+    display: block;
+  }
+
+}
+
 .button-wrapper {
   display: flex;
   justify-content: right;
