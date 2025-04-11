@@ -3,7 +3,13 @@
 }
 
 .input label,
-.input input {
+.input input,
+.input textarea {
     display: block;
     width: 100%;
+}
+
+.input textarea {
+    resize: vertical;
+    min-height: 60px;
 }
