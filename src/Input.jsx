@@ -1,6 +1,6 @@
 import './Input.css'
 
-function Input({ id, label, type }) {
+function Input({ id, label, type='text' }) {
   return (
     <div className="input">
       <label for={id}>{label}</label>
