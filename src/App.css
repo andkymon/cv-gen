@@ -1,0 +1,26 @@
+#root {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.left {
+  flex: 1;
+  background-color: black;
+}
+
+.right {
+  flex: 1;
+  background-color: gray;
+}
+
+h1 {
+  text-align: center;
+  padding: 24px;
+}
+
+@media (max-width: 1024px) {
+  #root {
+    flex-direction: column;
+  }
+}
