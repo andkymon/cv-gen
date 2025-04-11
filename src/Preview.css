@@ -1,14 +1,20 @@
 .preview {
-    height: calc(11 * 5vw);
-    width: calc(8 * 5vw);
+    height: 11in;
+    width: 8in;
     background-color: white;
     margin: 24px auto;
+    padding: 1in;
     box-shadow: var(--box-shadow);
+    scale: 0.75;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
 }
 
-@media (max-width: 1024px) {
-    .preview {
-        height: calc(11 * 10vw);
-        width: calc(8 * 10vw);
-    }
-  }
+.preview h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.preview .contact-info {
+    text-align: center;
+}
