@@ -9,7 +9,9 @@ function PersonalInfo() {
       <Input id='contact' label='Contact Number:' type='tel'/>
       <Input id='linkedin' label='LinkedIn:'/>
       <Input id='website' label='Website:'/>
-      <button className='save'>Save</button>
+      <div className='button-wrapper'>
+        <button>Save</button>
+      </div>
     </section>
   )
 }

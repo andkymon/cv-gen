@@ -33,7 +33,9 @@ section {
   padding: 36px;
 }
 
-.save {
-  display: block;
-  margin: 16px 0 0 auto;
+.button-wrapper {
+  display: flex;
+  justify-content: right;
+  gap: 8px;
+  margin-top: 16px;
 }
