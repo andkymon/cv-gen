@@ -33,6 +33,15 @@ section {
   padding: 36px;
 }
 
+.date-wrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.date-wrapper .input {
+  flex: 1;
+}
+
 .button-wrapper {
   display: flex;
   justify-content: right;

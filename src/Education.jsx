@@ -6,8 +6,10 @@ function Education() {
       <h2>Education</h2>
       <Input id='degree' label='Degree:' />
       <Input id='school' label='School:' />
-      <Input id='school-start' label='Start Date:' type='date' />
-      <Input id='school-end' label='End Date:' type='date' />
+      <div className='date-wrapper'>
+        <Input id='school-start' label='Start Date:' type='date' />
+        <Input id='school-end' label='End Date:' type='date' />
+      </div>
       <Input id='school-description' label='Description:' isTextbox={true} />
       <div className='button-wrapper'>
         <button>Add</button>
