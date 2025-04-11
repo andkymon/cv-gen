@@ -13,3 +13,10 @@
     resize: vertical;
     min-height: 60px;
 }
+
+.input input,
+.input textarea {
+    border: 1px solid #71C9CE;
+    border-radius: 8px;
+    transition: 0.3s;
+}

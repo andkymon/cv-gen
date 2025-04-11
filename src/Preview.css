@@ -3,6 +3,7 @@
     width: calc(8 * 5vw);
     background-color: white;
     margin: 24px auto;
+    box-shadow: var(--box-shadow);
 }
 
 @media (max-width: 1024px) {

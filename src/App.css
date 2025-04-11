@@ -6,12 +6,12 @@
 
 .left {
   flex: 1;
-  background-color: black;
+  background-color: #b0d1d4;
 }
 
 .right {
   flex: 1;
-  background-color: gray;
+  background-color: #71C9CE;
 }
 
 h1 {
@@ -26,11 +26,12 @@ h1 {
 }
 
 section {
-  background-color: darkgray;
+  background-color: #E3FDFD;
   border-radius: 16px;
   width: clamp(0px, 90vw, 480px);
   margin: 0px auto 32px;
   padding: 36px;
+  box-shadow: var(--box-shadow);
 }
 
 .date-wrapper {

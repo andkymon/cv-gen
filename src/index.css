@@ -3,14 +3,22 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color-scheme: light;
+  color: rgb(0, 0, 60);
   background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  outline-color: transparent;
+}
+
+*:focus {
+  outline: var(--focus-outline);
 }
 
 a {
@@ -42,29 +50,15 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #71C9CE;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: 0.3s;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Variables */
+:root {
+  --focus-outline: 1px solid rgb(0, 100, 255);
+  --box-shadow: 0px 4px 4px gray;
 }
 
 /*
@@ -100,7 +94,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 button {
   line-height: 1;
+  border: none;
 }
 button:hover {
   cursor: pointer;
+  filter: brightness(110%);
+}
+button:focus {
+  filter: brightness(110%);
 }
