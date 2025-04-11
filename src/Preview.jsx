@@ -3,6 +3,14 @@ import "./Preview.css";
 function Preview({ personalInfo }) {
   return (
     <div className="preview">
+      <PersonalInfoCV personalInfo={personalInfo} />
+    </div>
+  );
+}
+
+function PersonalInfoCV({ personalInfo }) {
+  return (
+    <>
       <h1>{personalInfo.name}</h1>
       <div className="contact-info">
         {personalInfo.email}
@@ -17,8 +25,8 @@ function Preview({ personalInfo }) {
           " | "}
         {personalInfo.website}
       </div>
-    </div>
-  );
+    </>
+  )
 }
 
 export default Preview;
