@@ -1,10 +1,12 @@
 import './Input.css'
 
-function Input({ id, label, type='text', isTextbox=false}) {
+function Input({ label, value, onChange, type='text', isTextbox=false}) {
   return (
     <div className="input">
-      <label for={id}>{label}</label>
-      {isTextbox ? <textarea></textarea> : <input id={id} type={type}></input>}
+      <label>
+        {label}
+        {isTextbox ? <textarea></textarea> : <input value={value} onChange={onChange} type={type}></input>}
+      </label>
     </div>
   );
 }
