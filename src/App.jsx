@@ -20,7 +20,7 @@ function App() {
     <>
       <div className='left'>
         <h1>CVGen</h1>
-        <PersonalInfo onSave={setPersonalInfo}/>
+        <PersonalInfo data={personalInfo} setData={setPersonalInfo}/>
         <Education />
         <Work />
       </div>
