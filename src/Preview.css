@@ -1,0 +1,13 @@
+.preview {
+    height: calc(11 * 5vw);
+    width: calc(8 * 5vw);
+    background-color: white;
+    margin: 24px auto;
+}
+
+@media (max-width: 1024px) {
+    .preview {
+        height: calc(11 * 10vw);
+        width: calc(8 * 10vw);
+    }
+  }
