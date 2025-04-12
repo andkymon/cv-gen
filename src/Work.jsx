@@ -27,6 +27,10 @@ function WorkForm( { data, setData } ) {
   const [descriptionValue, setDescriptionValue] = useState(data.description);
 
   const onSave = () => {
+    if (!startDateValue) {
+      alert('Start date not specified');
+      return;
+    }
     setData(
       { 
         position: positionValue,
