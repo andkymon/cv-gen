@@ -103,3 +103,6 @@ button:hover {
 button:focus {
   filter: brightness(110%);
 }
+button:active {
+  filter: brightness(90%);
+}
