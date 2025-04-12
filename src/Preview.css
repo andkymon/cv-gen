@@ -10,11 +10,21 @@
     color: black;
 }
 
+.preview * {
+    font-size: 12pt;
+}
+
 .preview h1 {
-    font-size: 30px;
+    font-size: 20pt;
     text-align: center;
 }
 
 .preview .contact-info {
     text-align: center;
+}
+
+.preview h2 {
+    font-size: 14pt;
+    border-bottom: 1px solid black;
+    margin: 8px 0;
 }
