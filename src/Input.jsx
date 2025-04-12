@@ -1,6 +1,10 @@
 import './Input.css'
 
-function Input({ label, value, onChange, type='text', isTextbox=false}) {
+function Input({ label, value, setState, type='text', isTextbox=false}) {
+  const onChange = (e) => {
+    setState(e.target.value);
+  }
+
   return (
     <div className="input">
       <label>

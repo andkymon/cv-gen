@@ -26,22 +26,6 @@ function PersonalInfoForm( { data, setData } ) {
   const [linkedinValue, setLinkedinValue] = useState(data.linkedin);
   const [websiteValue, setWebsiteValue] = useState(data.website);
 
-  const nameOnChange = (e) => {
-    setNameValue(e.target.value);
-  }
-  const emailOnChange = (e) => {
-    setEmailValue(e.target.value);
-  }
-  const contactOnChange = (e) => {
-    setContactValue(e.target.value);
-  }
-  const linkedinOnChange = (e) => {
-    setLinkedinValue(e.target.value);
-  }
-  const websiteOnChange = (e) => {
-    setWebsiteValue(e.target.value);
-  }
-
   const onSave = () => {
     setData(
       { ...data, 
@@ -56,17 +40,16 @@ function PersonalInfoForm( { data, setData } ) {
 
   return (
     <>
-      <Input label='Name:' value={nameValue} onChange={nameOnChange}/>
-      <Input label='Email:' value={emailValue} onChange={emailOnChange}/>
-      <Input label='Contact Number:' value={contactValue} onChange={contactOnChange} type='tel'/>
-      <Input label='LinkedIn:' value={linkedinValue} onChange={linkedinOnChange}/>
-      <Input label='Website:' value={websiteValue} onChange={websiteOnChange}/>
+      <Input label='Name:' value={nameValue} setState={setNameValue}/>
+      <Input label='Email:' value={emailValue} setState={setEmailValue}/>
+      <Input label='Contact Number:' value={contactValue} setState={setContactValue} type='tel'/>
+      <Input label='LinkedIn:' value={linkedinValue} setState={setLinkedinValue}/>
+      <Input label='Website:' value={websiteValue} setState={setWebsiteValue}/>
       <div className='button-wrapper'>
         <button onClick={onSave}>Save</button>
       </div>
     </>
   )
 }
-
 
 export default PersonalInfo
