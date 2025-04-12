@@ -9,7 +9,7 @@ function Input({ label, value, setState, type='text', isTextbox=false}) {
     <div className="input">
       <label>
         {label}
-        {isTextbox ? <textarea></textarea> : <input value={value} onChange={onChange} type={type}></input>}
+        {isTextbox ? <textarea value={value} onChange={onChange}></textarea> : <input value={value} onChange={onChange} type={type}></input>}
       </label>
     </div>
   );
