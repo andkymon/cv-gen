@@ -1,11 +1,14 @@
 .preview {
-    height: 11in;
-    width: 8in;
+    min-height: 11in;
+    min-width: 8in;
+    max-height: 11in;
+    max-width: 8in;
     background-color: white;
-    margin: 24px auto;
+    margin: 24px -64px;
     padding: 1in;
     box-shadow: var(--box-shadow);
     scale: 0.75;
+    transform-origin: top;
     font-family: 'Times New Roman', Times, serif;
     color: black;
 }
@@ -27,4 +30,32 @@
     font-size: 14pt;
     border-bottom: 1px solid black;
     margin: 8px 0;
+}
+
+@media (max-width: 1100px) {
+    .preview {
+      scale: 0.7;
+      margin: 24px -96px -300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .preview {
+      scale: 0.6;
+      margin: 24px -128px -400px;
+    }
+}
+
+@media (max-width: 520px) {
+    .preview {
+        scale: 0.5;
+        margin: 24px -160px -500px;
+    }
+}
+
+@media (max-width: 420px) {
+    .preview {
+        scale: 0.4;
+        margin: 24px -200px -600px;
+    }
 }

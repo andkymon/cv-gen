@@ -7,11 +7,14 @@
 .left {
   flex: 1;
   background-color: #b0d1d4;
+  padding: 0 24px;
 }
 
 .right {
   flex: 1;
   background-color: #71C9CE;
+  display: flex;
+  justify-content: center;
 }
 
 .left h1 {
@@ -28,7 +31,7 @@
 section {
   background-color: #E3FDFD;
   border-radius: 16px;
-  width: clamp(0px, 90vw, 480px);
+  max-width: 480px;
   margin: 0px auto 32px;
   padding: 36px;
   box-shadow: var(--box-shadow);
@@ -37,6 +40,8 @@ section {
 .heading-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 16px;
 }
 
 .date-wrapper {
@@ -46,6 +51,16 @@ section {
 
 .date-wrapper .input {
   flex: 1;
+}
+
+@media (max-width: 375px) {
+  .left h2 {
+    font-size: 1.25rem;
+  }
+
+  button {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 440px) {
