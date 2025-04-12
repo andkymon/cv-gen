@@ -44,7 +44,7 @@ function App() {
         <Work data={work} setData={setWork}/>
       </div>
       <div className='right'>
-        <Preview personalInfo={personalInfo}/>
+        <Preview personalInfo={personalInfo} education={education} work={work}/>
       </div>
     </>
   )
