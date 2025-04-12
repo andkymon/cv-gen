@@ -13,15 +13,24 @@ const defaultPersonalInfo = {
   website: 'johndoe.com',
 }
 
+const defaultEducation = {
+    degree: 'Bachelor of Science in Computer Science',
+    school: 'Mapúa University',
+    start_date: '2019-08-01',
+    end_date: '2023-06-15',
+    description: 'Focused on software development, data structures, and cybersecurity. Led several capstone projects involving machine learning and web development.',
+}
+
 function App() {
   const [personalInfo, setPersonalInfo] = useState({ ...defaultPersonalInfo });
+  const [education, setEducation] = useState({ ...defaultEducation });
 
   return (
     <>
       <div className='left'>
         <h1>CVGen</h1>
         <PersonalInfo data={personalInfo} setData={setPersonalInfo}/>
-        <Education />
+        <Education data={education} setData={setEducation}/>
         <Work />
       </div>
       <div className='right'>
