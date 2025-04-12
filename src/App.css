@@ -34,6 +34,11 @@ section {
   box-shadow: var(--box-shadow);
 }
 
+.heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .date-wrapper {
   display: flex;
   gap: 32px;
