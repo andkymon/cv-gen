@@ -1,9 +1,9 @@
-import './App.css'
+import '../styles/App.css'
 import PersonalInfo from './PersonalInfo.jsx'
 import Education from './Education.jsx'
 import Work from './Work.jsx'
 import Preview from './Preview.jsx'
-import { defaultPersonalInfo, defaultEducation, defaultWork } from './data.js'
+import { defaultPersonalInfo, defaultEducation, defaultWork } from '../data.js'
 import { useState } from 'react'
 
 function App() {

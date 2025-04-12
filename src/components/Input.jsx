@@ -1,4 +1,4 @@
-import './Input.css'
+import '../styles/Input.css'
 
 function Input({ label, value, setState, type='text', isTextbox=false}) {
   const onChange = (e) => {

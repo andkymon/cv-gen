@@ -1,5 +1,5 @@
 import { format } from "date-fns";
-import "./Preview.css";
+import "../styles/Preview.css";
 
 function Preview({ personalInfo, education, work }) {
   return (
