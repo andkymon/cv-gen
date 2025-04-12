@@ -1,19 +1,19 @@
 # CVGen
 
-CVGen is my very first project built with **React**!  
-I made it to practice managing **state** and **props**, which are core concepts in React development.
+**CVGen** is my very first project built with **React**!  
+I created it to practice handling **state** and **props**—two core concepts in React development.
+
+🔗 [Live Demo](https://cv-gen-4sf.pages.dev/)
 
 ---
 
-## 🚧 Project Status
+## 🚧 Project Status: In Progress
 
-**Still a work in progress!**  
-Features and improvements I'm planning to add:
+This app is still under development! Here are a few features I'm planning to add:
 
-- [ ] Download button to export the CV as a PDF
-- [ ] Additional sections (e.g. skills, certifications)
-- [ ] Support for multiple education and work experience entries
-- [ ] Page breaks when content overflows
+- [ ] Export CV as PDF
+- [ ] Add more sections (e.g., skills, certifications)
+- [ ] Support for multiple entries in education and work experience
+- [ ] Page breaks for better layout when content overflows
 
 ---
-
